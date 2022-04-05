@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            #clear
+            {
+                width:130px;
+            }
+            .formstyle
+            {
+                width:130px;
+                height:261px;
+                margin:auto;
+                border:2px solid black;
+            }
+            input{
+                width:40px;
+                background-color: blue;
+                color: white;
+            }
+            #answerstyle
+            {
+                width: 130px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="formstyle">
+            <form name="forms">
+                <input type="text" id="answerstyle"><br><br>
+
+                <input style="color:red" type="button" id = "one" value = "1" onclick="one1()">
+                <input type="button" id="two" value = "2" onclick="two2()">
+                <input type="button" id="three" value = "3" onclick="three3()">
+
+                <br>
+                <br>
+
+                <input type="button" id="four" value = "4" onclick="four4()">
+                <input type="button" id="five" value = "5" onclick="five5()">
+                <input type="button" id="six" value = "6" onclick="six6()">
+
+                <br>
+                <br>
+
+                <input type="button" id="seven" value = "7" onclick="seven7()">
+                <input type="button" id="eight" value = "8" onclick="eight8()">
+                <input type="button" id="nine" value = "9" onclick="nine9()">
+
+                <br>
+                <br>
+                <input type="button" id="plus" value = "+" onclick="plus1()">
+                <input type="button" id="minus" value = "-" onclick="minus1()">
+                <input type="button" id="mul" value = "*" onclick="mul1()">
+       
+
+                <br>
+                <br>
+
+                <input type="button" id="div" value = "/" onclick="div1()">
+                <input type="button" id="zero" value = "0" onclick="zero1()">
+                <input type="button" id="equal" value = "=" onclick="equal1()">
+
+                
+                <br>
+                <br>
+                
+                <input type="button" id="clear" value = "Clear All" onclick="clearall1()">
+              
+
+                <script>
+                    function one1()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("one").value;
+                    }
+                    function two2()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("two").value;
+                    }
+                    function three3()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("three").value;
+                    }
+                    
+                    function four4()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("four").value;
+                    }
+                    function five5()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("five").value;
+                    }
+                    function six6()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("six").value;
+                    }
+
+                    function seven7()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("seven").value;
+                    }
+                    function eight8()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("eight").value;
+                    }
+                    function nine9()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("nine").value;
+                    }
+
+                    function plus1()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("plus").value;
+                    }
+                    function minus1()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("minus").value;
+                    }
+                    function mul1()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("mul").value;
+                    }
+
+                    function div1()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("div").value;
+                    }
+                    function zero1()
+                    {
+                        document.getElementById("answerstyle").value += document.getElementById("zero").value;
+                    }
+                    function equal1()
+                    {
+                        document.getElementById("answerstyle").value = eval(document.getElementById("answerstyle").value);
+                    }
+
+                    function clearall1()
+                    {
+                        document.getElementById("answerstyle").value = '';
+                    }
+                </script>
+            </form>
+        </div>
+    </body>
+</html>

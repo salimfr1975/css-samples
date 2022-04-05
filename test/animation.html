@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .backdesign {
+            color: white; float: left;}
+        .anim 
+        {   background-color: black; height: 50px; width: 100%;
+            overflow: hidden; 
+        }
+
+        .insidedesign 
+        {
+            background-color: red;
+            background-image: linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%,
+             rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+            color: white; height: 100%; width: 50%;
+            animation: 1s linear 0s infinite alternate afci;
+        }
+        @keyframes afci
+        { 
+            from { margin-left:-20%; } to { margin-left:100%; }  
+        }
+    </style>
+</head>
+<body>
+    <div class="anim">
+        <div class="backdesign">
+          AFCI Formation
+        </div>
+        <div class="insidedesign">
+                  
+        </div>
+    </div>
+</body>
+</html>
+
+
